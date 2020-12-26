@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2018-2020 The LineageOS Project
-# Copyright (C) 2020 The SuperiorOS Project
+# Copyright (C) 2020 The KangOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -10,7 +10,10 @@ BOARD_VENDOR := xiaomi
 DEVICE_PATH := device/xiaomi/violet
 
 # Build
+BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Architecture
 TARGET_ARCH := arm64

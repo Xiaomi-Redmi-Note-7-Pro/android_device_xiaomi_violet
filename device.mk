@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2018-2020 The LineageOS Project
-# Copyright (C) 2020 The SuperiorOS Project
+# Copyright (C) 2020 The KangOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -22,11 +22,7 @@ $(call inherit-product-if-exists, vendor/xiaomi/violet/violet-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-superior
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/packages/apps/Snap
+    $(LOCAL_PATH)/overlay-kangos
 
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
